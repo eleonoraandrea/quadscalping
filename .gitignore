@@ -1,30 +1,10 @@
-# Secrets — never publish
-config.json
-.env
-*.env
-data/state.json
+```
+# Logs
+*.log
 
-# Local market data (re-downloadable via cmd/download)
-data/*.csv
-data/*.json
-!data/.gitkeep
-
-# Local reports
-reports/*.html
-reports/*.json
+# Reports
+reports/
 
 # Build output
-build/
-bin/
-*.exe
-*.out
-
-# Go cache
-/vendor/
-
-# OS / editor
-.DS_Store
-.idea/
-.vscode/
-*.swp
-*.swo
+optimize
+```

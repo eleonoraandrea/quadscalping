@@ -331,29 +331,65 @@ func (b *Bot) equityUnlocked(ctx context.Context) float64 {
 func (b *Bot) managePosition(ctx context.Context, symbol string) {
 	b.mu.Lock()
 	pos, ok := b.state.Positions[symbol]
-	b.mu.Unlock()
 	if !ok {
+		b.mu.Unlock()
 		return
 	}
 
 	cs := b.candles(ctx, symbol)
 	if cs == nil {
+		b.mu.Unlock()
 		return
 	}
 	last := cs[len(cs)-1]
 	p := b.params[symbol]
+	// Rilascia il lock prima di computazioni lunghe
+	b.mu.Unlock()
+
 	ser := strategy.Compute(cs, p)
 	sig := ser.EvaluateLast(cs, p)
 
+	// Riacquisisci il lock per leggere/aggiornare la posizione
+	b.mu.Lock()
+	pos, ok = b.state.Positions[symbol]
+	if !ok {
+		// La posizione è stata chiusa nel frattempo da un'altra goroutine
+		b.mu.Unlock()
+		return
+	}
+
+	var shouldClose bool
+	var closeReason string
+	var closePrice float64
+	var shouldPartial bool
+
 	switch {
 	case last.Low <= pos.Stop:
-		b.closePosition(ctx, symbol, pos.Stop, "STOP_LOSS")
+		shouldClose = true
+		closeReason = "STOP_LOSS"
+		closePrice = pos.Stop
 	case !pos.Partial && last.High >= pos.TP1:
-		b.partialTP(ctx, symbol, pos)
+		shouldPartial = true
 	case pos.TP2 > 0 && last.High >= pos.TP2:
-		b.closePosition(ctx, symbol, pos.TP2, "TAKE_PROFIT")
+		shouldClose = true
+		closeReason = "TAKE_PROFIT"
+		closePrice = pos.TP2
 	case sig.Type == strategy.SlowExit:
-		b.closePosition(ctx, symbol, last.Close, "SLOW_EXIT")
+		shouldClose = true
+		closeReason = "SLOW_EXIT"
+		closePrice = last.Close
+	}
+
+	if shouldPartial {
+		b.mu.Unlock()
+		b.partialTP(ctx, symbol, pos)
+		b.log.Printf("managePosition %s: azione=partial", symbol)
+	} else if shouldClose {
+		b.mu.Unlock()
+		b.closePosition(ctx, symbol, closePrice, closeReason)
+		b.log.Printf("managePosition %s: azione=%s", symbol, closeReason)
+	} else {
+		b.mu.Unlock()
 	}
 }
 
