@@ -1,0 +1,110 @@
+{
+  "exchange": {
+    "id": "binance",
+    "testnet": true,
+    "api_key": "",
+    "api_secret": "",
+    "quantity_precision": 6,
+    "dry_run": true
+  },
+  "trading": {
+    "symbols": [
+      "BTCUSDT",
+      "ETHUSDT",
+      "DOGEUSDT"
+    ],
+    "timeframe": "4h",
+    "max_positions": 3,
+    "risk_pct": 0.01,
+    "max_daily_loss_pct": 0.05
+  },
+  "hps": {
+    "stop_mode": "atr",
+    "stop_atr": 1.5,
+    "stop_lookback": 20,
+    "tp1_r": 4.0,
+    "tp2_r": 0,
+    "partial_pct": 0.5,
+    "breakeven_on_tp1": true,
+    "exit_slow": 70,
+    "min_signal_strength": 50,
+    "vwap_period": 200,
+    "regime_filter": "down"
+  },
+  "symbol_overrides": {
+    "BTCUSDT": {
+      "stop_atr": 1.5,
+      "tp1_r": 4.0,
+      "exit_slow": 70,
+      "min_signal_strength": 50,
+      "regime_filter": "down"
+    },
+    "ETHUSDT": {
+      "stop_atr": 1.5,
+      "tp1_r": 1.5,
+      "exit_slow": 88,
+      "min_signal_strength": 50,
+      "regime_filter": "down"
+    },
+    "DOGEUSDT": {
+      "stop_atr": 3.0,
+      "tp1_r": 2.0,
+      "tp2_r": 0,
+      "exit_slow": 60,
+      "min_signal_strength": 50,
+      "regime_filter": "down"
+    }
+  },
+  "telegram": {
+    "enabled": false,
+    "bot_token": "",
+    "chat_id": ""
+  },
+  "bot": {
+    "poll_interval_sec": 30,
+    "state_file": "data/state.json",
+    "data_dir": "data",
+    "http_addr": ":8080",
+    "initial_capital": 10000,
+    "commission": 0.0004,
+    "slippage": 0.0001
+  },
+  "risk": {
+    "vol_adjust": false,
+    "vol_lookback": 100,
+    "strength_sizing": true,
+    "dd_throttle_pct": 0,
+    "trail_atr_mult": 0,
+    "loss_streak_n": 0,
+    "loss_streak_pause_bars": 24
+  },
+  "risk_overrides": {
+    "BTCUSDT": {
+      "vol_adjust": false,
+      "vol_lookback": 100,
+      "strength_sizing": true,
+      "dd_throttle_pct": 0,
+      "trail_atr_mult": 0,
+      "loss_streak_n": 0,
+      "loss_streak_pause_bars": 24
+    },
+    "ETHUSDT": {
+      "vol_adjust": true,
+      "vol_lookback": 100,
+      "strength_sizing": false,
+      "dd_throttle_pct": 0,
+      "trail_atr_mult": 0,
+      "loss_streak_n": 0,
+      "loss_streak_pause_bars": 24
+    },
+    "DOGEUSDT": {
+      "vol_adjust": false,
+      "vol_lookback": 100,
+      "strength_sizing": false,
+      "dd_throttle_pct": 0,
+      "trail_atr_mult": 0,
+      "loss_streak_n": 0,
+      "loss_streak_pause_bars": 24
+    }
+  }
+}

@@ -1,0 +1,63 @@
+=== Ottimizzazione Avanzata Parametri ===
+Periodo: 2025-03-04 - 2026-09-04
+Timeframe: 4h
+
+Caricamento dati per BTCUSDT...
+  Trovate 1000 candele
+BTCUSDT: 50/256 combinazioni...BTCUSDT: 100/256 combinazioni...BTCUSDT: 150/256 combinazioni...BTCUSDT: 200/256 combinazioni...BTCUSDT: 250/256 combinazioni...BTCUSDT: completato 256 combinazioni. Best PnL: 858.59
+
+>>> Migliori parametri per BTCUSDT:
+    TrailingStopATR: 0.0
+    DynamicTP: true
+    TP1R: 5.0
+    StopATR: 1.5
+    RegimeFilter: down
+    PnL: 858.59 USDT
+    WinRate: 66.7%
+    MaxDD: 2.01%
+    Sharpe: 3.20
+    Trades: 6
+    ProfitFactor: 5.37
+
+Caricamento dati per ETHUSDT...
+  Trovate 1000 candele
+ETHUSDT: 50/256 combinazioni...ETHUSDT: 100/256 combinazioni...ETHUSDT: 150/256 combinazioni...ETHUSDT: 200/256 combinazioni...ETHUSDT: 250/256 combinazioni...ETHUSDT: completato 256 combinazioni. Best PnL: 369.28
+
+>>> Migliori parametri per ETHUSDT:
+    TrailingStopATR: 0.0
+    DynamicTP: true
+    TP1R: 5.0
+    StopATR: 2.0
+    RegimeFilter: any
+    PnL: 369.28 USDT
+    WinRate: 54.5%
+    MaxDD: 4.14%
+    Sharpe: 1.43
+    Trades: 11
+    ProfitFactor: 1.93
+
+Caricamento dati per DOGEUSDT...
+  Trovate 1000 candele
+DOGEUSDT: 50/256 combinazioni...DOGEUSDT: 100/256 combinazioni...DOGEUSDT: 150/256 combinazioni...DOGEUSDT: 200/256 combinazioni...DOGEUSDT: 250/256 combinazioni...DOGEUSDT: completato 256 combinazioni. Best PnL: 450.61
+
+>>> Migliori parametri per DOGEUSDT:
+    TrailingStopATR: 0.0
+    DynamicTP: false
+    TP1R: 5.0
+    StopATR: 3.0
+    RegimeFilter: down
+    PnL: 450.61 USDT
+    WinRate: 71.4%
+    MaxDD: 2.49%
+    Sharpe: 2.59
+    Trades: 7
+    ProfitFactor: 3.39
+
+
+=== RIEPILOGO OTTIMIZZAZIONE ===
+BTCUSDT    PnL:  +858.59  WR:  66.7%  DD:  2.01%  Sharpe:   3.20  Trades:   6
+ETHUSDT    PnL:  +369.28  WR:  54.5%  DD:  4.14%  Sharpe:   1.43  Trades:  11
+DOGEUSDT   PnL:  +450.61  WR:  71.4%  DD:  2.49%  Sharpe:   2.59  Trades:   7
+TOTALE     PnL: +1678.48 (TOTALE)
+
+Report salvato in reports/advanced_optimization.txt

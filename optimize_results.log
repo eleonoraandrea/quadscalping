@@ -1,0 +1,101 @@
+
+=== BTCUSDT ===
+Caricate 1000 candele
+base              : trades=  6 WR= 66.7% PF= 4.21 PnL=  657.06 DD= 2.07% SQN=1.23 Score=10.20
+stop_1.0          : trades=  7 WR= 57.1% PF= 3.21 PnL=  679.88 DD= 2.82% SQN=1.06 Score=8.38
+stop_2.0          : trades=  6 WR= 66.7% PF= 3.71 PnL=  551.69 DD= 2.01% SQN=1.16 Score=8.99
+stop_2.5          : trades=  6 WR= 66.7% PF= 3.35 PnL=  476.57 DD= 2.00% SQN=1.10 Score=8.12
+stop_3.0          : trades=  6 WR= 66.7% PF= 2.99 PnL=  403.24 DD= 1.99% SQN=1.01 Score=7.25
+tp_2.0            : trades=  6 WR= 66.7% PF= 4.59 PnL=  734.69 DD= 2.07% SQN=1.30 Score=11.12
+tp_2.5            : trades=  6 WR= 66.7% PF= 4.83 PnL=  784.79 DD= 2.07% SQN=1.33 Score=11.71
+tp_3.0            : trades=  6 WR= 66.7% PF= 4.87 PnL=  793.30 DD= 2.07% SQN=1.30 Score=11.81
+tp_4.0            : trades=  6 WR= 66.7% PF= 5.12 PnL=  844.22 DD= 2.07% SQN=1.30 Score=12.41
+tp_5.0            : trades=  6 WR= 66.7% PF= 5.37 PnL=  895.15 DD= 2.07% SQN=1.29 Score=13.01
+str_60            : trades=  6 WR= 66.7% PF= 4.21 PnL=  657.06 DD= 2.07% SQN=1.23 Score=10.20
+str_70            : trades=  6 WR= 66.7% PF= 4.21 PnL=  657.06 DD= 2.07% SQN=1.23 Score=10.20
+str_80            : trades=  6 WR= 66.7% PF= 4.21 PnL=  657.06 DD= 2.07% SQN=1.23 Score=10.20
+exit_60           : trades=  6 WR= 66.7% PF= 2.04 PnL=  213.05 DD= 2.07% SQN=0.74 Score=4.94
+exit_65           : trades=  6 WR= 66.7% PF= 4.06 PnL=  626.42 DD= 2.07% SQN=1.18 Score=9.84
+exit_75           : trades=  6 WR= 66.7% PF= 4.21 PnL=  657.06 DD= 2.07% SQN=1.23 Score=10.20
+exit_80           : trades=  6 WR= 66.7% PF= 4.21 PnL=  657.06 DD= 2.07% SQN=1.23 Score=10.20
+trail_1.0         : trades=  6 WR= 66.7% PF= 2.72 PnL=  352.06 DD= 2.07% SQN=1.00 Score=6.59
+trail_1.5         : trades=  6 WR= 66.7% PF= 2.92 PnL=  393.04 DD= 2.07% SQN=1.09 Score=7.07
+trail_2.0         : trades=  6 WR= 66.7% PF= 3.03 PnL=  416.77 DD= 2.07% SQN=1.15 Score=7.35
+any_regime        : trades= 13 WR= 61.5% PF= 2.87 PnL=  978.43 DD= 4.60% SQN=1.33 Score=10.10
+str70_tp3         : trades=  6 WR= 66.7% PF= 4.87 PnL=  793.30 DD= 2.07% SQN=1.30 Score=11.81
+str60_exit65      : trades=  6 WR= 66.7% PF= 4.06 PnL=  626.42 DD= 2.07% SQN=1.18 Score=9.84
+stop2_tp3         : trades=  6 WR= 66.7% PF= 4.17 PnL=  647.03 DD= 2.01% SQN=1.19 Score=10.12
+trail1.5_tp2.5    : trades=  6 WR= 66.7% PF= 3.70 PnL=  553.43 DD= 2.07% SQN=1.30 Score=8.97
+str70_trail1.5    : trades=  6 WR= 66.7% PF= 2.92 PnL=  393.04 DD= 2.07% SQN=1.09 Score=7.07
+
+★ BEST: tp_5.0 con Score=13.01, PF=5.37, PnL=895.15, Trades=6, DD=2.07%, WR=66.7%
+
+=== ETHUSDT ===
+Caricate 1000 candele
+base              : trades=  6 WR= 33.3% PF= 0.67 PnL= -133.38 DD= 3.54% SQN=-0.45 Score=1.61
+stop_1.0          : trades=  7 WR= 28.6% PF= 0.59 PnL= -209.26 DD= 4.49% SQN=-0.65 Score=1.52
+stop_2.0          : trades=  6 WR= 33.3% PF= 0.59 PnL= -163.84 DD= 3.45% SQN=-0.59 Score=1.43
+stop_2.5          : trades=  6 WR= 33.3% PF= 0.46 PnL= -218.23 DD= 3.42% SQN=-0.90 Score=1.10
+stop_3.0          : trades=  5 WR= 40.0% PF= 0.45 PnL= -167.35 DD= 2.77% SQN=-0.80 Score=0.98
+tp_2.0            : trades=  6 WR= 33.3% PF= 0.63 PnL= -150.92 DD= 3.54% SQN=-0.52 Score=1.51
+tp_2.5            : trades=  6 WR= 33.3% PF= 0.63 PnL= -150.92 DD= 3.54% SQN=-0.52 Score=1.51
+tp_3.0            : trades=  6 WR= 33.3% PF= 0.63 PnL= -150.92 DD= 3.54% SQN=-0.52 Score=1.51
+tp_4.0            : trades=  6 WR= 33.3% PF= 0.63 PnL= -150.92 DD= 3.54% SQN=-0.52 Score=1.51
+tp_5.0            : trades=  6 WR= 33.3% PF= 0.63 PnL= -150.92 DD= 3.54% SQN=-0.52 Score=1.51
+str_60            : trades=  6 WR= 33.3% PF= 0.67 PnL= -133.38 DD= 3.54% SQN=-0.45 Score=1.61
+str_70            : trades=  6 WR= 33.3% PF= 0.67 PnL= -133.38 DD= 3.54% SQN=-0.45 Score=1.61
+str_80            : trades=  6 WR= 33.3% PF= 0.67 PnL= -133.38 DD= 3.54% SQN=-0.45 Score=1.61
+exit_60           : trades=  6 WR= 33.3% PF= 0.67 PnL= -133.38 DD= 3.54% SQN=-0.45 Score=1.61
+exit_65           : trades=  6 WR= 33.3% PF= 0.67 PnL= -133.38 DD= 3.54% SQN=-0.45 Score=1.61
+exit_75           : trades=  6 WR= 33.3% PF= 0.67 PnL= -133.38 DD= 3.54% SQN=-0.45 Score=1.61
+exit_80           : trades=  5 WR= 40.0% PF= 0.94 PnL=  -19.54 DD= 3.54% SQN=-0.06 Score=2.05
+trail_1.0         : trades=  6 WR= 33.3% PF= 0.72 PnL= -112.97 DD= 3.54% SQN=-0.36 Score=1.73
+trail_1.5         : trades=  6 WR= 33.3% PF= 0.71 PnL= -118.64 DD= 3.54% SQN=-0.38 Score=1.70
+trail_2.0         : trades=  6 WR= 33.3% PF= 0.69 PnL= -124.49 DD= 3.54% SQN=-0.41 Score=1.66
+any_regime        : trades= 12 WR= 41.7% PF= 1.37 PnL=  259.89 DD= 5.97% SQN=0.40 Score=4.60
+str70_tp3         : trades=  6 WR= 33.3% PF= 0.63 PnL= -150.92 DD= 3.54% SQN=-0.52 Score=1.51
+str60_exit65      : trades=  6 WR= 33.3% PF= 0.67 PnL= -133.38 DD= 3.54% SQN=-0.45 Score=1.61
+stop2_tp3         : trades=  6 WR= 33.3% PF= 0.53 PnL= -189.98 DD= 3.45% SQN=-0.72 Score=1.27
+trail1.5_tp2.5    : trades=  6 WR= 33.3% PF= 0.63 PnL= -150.92 DD= 3.54% SQN=-0.52 Score=1.51
+str70_trail1.5    : trades=  6 WR= 33.3% PF= 0.71 PnL= -118.64 DD= 3.54% SQN=-0.38 Score=1.70
+
+★ BEST: any_regime con Score=4.60, PF=1.37, PnL=259.89, Trades=12, DD=5.97%, WR=41.7%
+
+=== DOGEUSDT ===
+Caricate 1000 candele
+base              : trades=  8 WR= 37.5% PF= 0.91 PnL=  -43.17 DD= 5.53% SQN=-0.09 Score=2.51
+stop_1.0          : trades=  9 WR= 33.3% PF= 1.19 PnL=  114.68 DD= 5.74% SQN=0.19 Score=3.47
+stop_2.0          : trades=  8 WR= 50.0% PF= 1.07 PnL=   27.06 DD= 4.12% SQN=0.06 Score=2.96
+stop_2.5          : trades=  7 WR= 57.1% PF= 1.13 PnL=   38.40 DD= 3.85% SQN=0.10 Score=2.92
+stop_3.0          : trades=  7 WR= 71.4% PF= 1.97 PnL=  194.68 DD= 2.69% SQN=0.57 Score=5.13
+tp_2.0            : trades=  8 WR= 37.5% PF= 0.96 PnL=  -19.36 DD= 5.53% SQN=-0.04 Score=2.64
+tp_2.5            : trades=  8 WR= 37.5% PF= 1.01 PnL=    4.45 DD= 5.53% SQN=0.01 Score=2.77
+tp_3.0            : trades=  8 WR= 37.5% PF= 1.06 PnL=   28.26 DD= 5.53% SQN=0.05 Score=2.91
+tp_4.0            : trades=  8 WR= 37.5% PF= 1.15 PnL=   75.88 DD= 5.53% SQN=0.13 Score=3.17
+tp_5.0            : trades=  8 WR= 37.5% PF= 1.25 PnL=  123.50 DD= 5.53% SQN=0.19 Score=3.43
+str_60            : trades=  8 WR= 37.5% PF= 0.91 PnL=  -43.17 DD= 5.53% SQN=-0.09 Score=2.51
+str_70            : trades=  8 WR= 37.5% PF= 0.91 PnL=  -43.17 DD= 5.53% SQN=-0.09 Score=2.51
+str_80            : trades=  8 WR= 37.5% PF= 0.91 PnL=  -43.17 DD= 5.53% SQN=-0.09 Score=2.51
+exit_60           : trades=  8 WR= 25.0% PF= 0.88 PnL=  -58.78 DD= 5.53% SQN=-0.12 Score=2.43
+exit_65           : trades=  8 WR= 37.5% PF= 0.91 PnL=  -43.17 DD= 5.53% SQN=-0.09 Score=2.51
+exit_75           : trades=  6 WR= 16.7% PF= 0.54 PnL= -229.14 DD= 6.05% SQN=-0.62 Score=1.28
+exit_80           : trades=  6 WR= 16.7% PF= 0.54 PnL= -229.14 DD= 6.05% SQN=-0.62 Score=1.28
+trail_1.0         : trades=  8 WR= 37.5% PF= 0.44 PnL= -279.76 DD= 5.53% SQN=-1.00 Score=1.21
+trail_1.5         : trades=  8 WR= 37.5% PF= 0.42 PnL= -288.59 DD= 5.53% SQN=-1.06 Score=1.16
+trail_2.0         : trades=  8 WR= 37.5% PF= 0.41 PnL= -297.41 DD= 5.53% SQN=-1.12 Score=1.12
+any_regime        : trades= 12 WR= 33.3% PF= 0.69 PnL= -249.64 DD= 7.17% SQN=-0.51 Score=2.29
+str70_tp3         : trades=  8 WR= 37.5% PF= 1.06 PnL=   28.26 DD= 5.53% SQN=0.05 Score=2.91
+str60_exit65      : trades=  8 WR= 37.5% PF= 0.91 PnL=  -43.17 DD= 5.53% SQN=-0.09 Score=2.51
+stop2_tp3         : trades=  8 WR= 50.0% PF= 1.25 PnL=   99.46 DD= 4.12% SQN=0.20 Score=3.46
+trail1.5_tp2.5    : trades=  8 WR= 37.5% PF= 0.61 PnL= -196.01 DD= 5.53% SQN=-0.56 Score=1.67
+str70_trail1.5    : trades=  8 WR= 37.5% PF= 0.42 PnL= -288.59 DD= 5.53% SQN=-1.06 Score=1.16
+
+★ BEST: stop_3.0 con Score=5.13, PF=1.97, PnL=194.68, Trades=7, DD=2.69%, WR=71.4%
+
+============================================================
+RIEPILOGO OTTIMIZZAZIONE PER SIMBOLO
+============================================================
+BTCUSDT   : BEST               PnL=  895.15  PF=5.37  DD= 2.07%  Trades=6
+ETHUSDT   : BEST               PnL=  259.89  PF=1.37  DD= 5.97%  Trades=12
+DOGEUSDT  : BEST               PnL=  194.68  PF=1.97  DD= 2.69%  Trades=7
+TOTALE    :  1349.71
