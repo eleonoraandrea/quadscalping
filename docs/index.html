@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuadScalping — Backtest Reports</title>
+<style>
+  :root{
+    --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --muted:#52514e;
+    --border:rgba(11,11,11,.10); --accent:#3987e5; --pos:#0ca30c; --neg:#d03b3b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--page);color:var(--ink);padding:48px 24px}
+  .wrap{max-width:900px;margin:0 auto}
+  h1{font-size:28px;letter-spacing:-.02em;margin-bottom:6px}
+  .sub{color:var(--muted);margin-bottom:36px}
+  .sub a{color:var(--accent);text-decoration:none}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+  a.card{display:block;background:var(--surface);border:1px solid var(--border);border-radius:12px;
+    padding:22px 24px;text-decoration:none;color:inherit;transition:transform .12s,box-shadow .12s}
+  a.card:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(11,11,11,.08)}
+  .card h2{font-size:17px;margin-bottom:4px}
+  .card .tf{font-size:12px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
+  .row{display:flex;justify-content:space-between;font-size:14px;padding:3px 0;border-top:1px solid var(--border)}
+  .row:first-of-type{border-top:none}
+  .row .k{color:var(--muted)}
+  .pos{color:var(--pos);font-weight:600} .neg{color:var(--neg);font-weight:600}
+  footer{margin-top:40px;color:var(--muted);font-size:13px}
+  footer a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>QuadScalping — Backtest Reports</h1>
+  <p class="sub">HPS Quad Super Signal with Markov Regime Filter · interactive self-contained reports ·
+    <a href="https://github.com/eleonoraandrea/quadscalping">github.com/eleonoraandrea/quadscalping</a></p>
+
+  <div class="grid">
+    <a class="card" href="reports/h4_multi_jul_sep.html">
+      <div class="tf">H4 · Multi-Asset</div>
+      <h2>BTC + ETH + DOGE · Jul–Sep 2026</h2>
+      <div class="row"><span class="k">Aggregate PnL</span><span class="pos">+$1,653.72 (+16.5%)</span></div>
+      <div class="row"><span class="k">Trades</span><span>12</span></div>
+      <div class="row"><span class="k">Win rate</span><span>83.3%</span></div>
+      <div class="row"><span class="k">Max drawdown</span><span>≤3.9%</span></div>
+      <div class="row"><span class="k">Best symbol</span><span>ETHUSDT +8.7% (Sharpe 4.06)</span></div>
+    </a>
+
+    <a class="card" href="reports/h4_optimized_apr_sep.html">
+      <div class="tf">H4 · Optimized</div>
+      <h2>BTC + ETH + DOGE · Apr–Sep 2026</h2>
+      <div class="row"><span class="k">Aggregate PnL</span><span class="pos">+$1,518.18 (+15.2%)</span></div>
+      <div class="row"><span class="k">Trades</span><span>24</span></div>
+      <div class="row"><span class="k">Win rate</span><span>62.5%</span></div>
+      <div class="row"><span class="k">Max drawdown</span><span>≤6.0%</span></div>
+      <div class="row"><span class="k">Best symbol</span><span>BTCUSDT +9.0% (PF 5.37)</span></div>
+    </a>
+
+    <a class="card" href="reports/h4_final_apr_sep.html">
+      <div class="tf">H4 · Baseline</div>
+      <h2>BTC + ETH + DOGE · Apr–Sep 2026</h2>
+      <div class="row"><span class="k">Aggregate PnL</span><span class="pos">+$443.90</span></div>
+      <div class="row"><span class="k">Trades</span><span>21</span></div>
+      <div class="row"><span class="k">Win rate</span><span>~57%</span></div>
+      <div class="row"><span class="k">Max drawdown</span><span>≤3%</span></div>
+      <div class="row"><span class="k">Note</span><span>pre-optimization parameters</span></div>
+    </a>
+  </div>
+
+  <footer>Backtests include commissions (0.04%/side) and slippage (0.01%/side). Past performance does not
+    guarantee future results. Source code and raw data: <a href="https://github.com/eleonoraandrea/quadscalping">quadscalping on GitHub</a>.</footer>
+</div>
+</body>
+</html>
