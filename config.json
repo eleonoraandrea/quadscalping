@@ -13,46 +13,62 @@
       "ETHUSDT",
       "DOGEUSDT"
     ],
-    "timeframe": "4h",
-    "max_positions": 3,
-    "risk_pct": 0.01,
-    "max_daily_loss_pct": 0.05
+    "timeframe": "15m",
+    "max_positions": 5,
+    "risk_pct": 0.02,
+    "max_daily_loss_pct": 0.06
   },
   "hps": {
     "stop_mode": "atr",
-    "stop_atr": 1.5,
-    "stop_lookback": 20,
-    "tp1_r": 4.0,
-    "tp2_r": 0,
+    "stop_atr": 2.5,
+    "stop_lookback": 14,
+    "tp1_r": 2.0,
+    "tp2_r": 4.0,
     "partial_pct": 0.5,
     "breakeven_on_tp1": true,
-    "exit_slow": 70,
-    "min_signal_strength": 50,
-    "vwap_period": 200,
-    "regime_filter": "down"
+    "exit_slow": 60,
+    "min_signal_strength": 40,
+    "vwap_period": 100,
+    "regime_filter": "any",
+    "trailing_start": 1.5,
+    "trailing_step": 0.5,
+    "max_hold_bars": 20,
+    "use_dynamic_tp": true,
+    "adaptive_exit_mult": 1.2
   },
   "symbol_overrides": {
     "BTCUSDT": {
-      "stop_atr": 1.5,
-      "tp1_r": 4.0,
-      "exit_slow": 70,
-      "min_signal_strength": 50,
-      "regime_filter": "down"
+      "stop_atr": 2.5,
+      "tp1_r": 2.0,
+      "tp2_r": 4.0,
+      "exit_slow": 60,
+      "min_signal_strength": 40,
+      "regime_filter": "any",
+      "trailing_start": 1.5,
+      "trailing_step": 0.5,
+      "max_hold_bars": 20
     },
     "ETHUSDT": {
-      "stop_atr": 1.5,
-      "tp1_r": 1.5,
-      "exit_slow": 88,
-      "min_signal_strength": 50,
-      "regime_filter": "down"
+      "stop_atr": 2.0,
+      "tp1_r": 2.0,
+      "tp2_r": 4.0,
+      "exit_slow": 60,
+      "min_signal_strength": 40,
+      "regime_filter": "any",
+      "trailing_start": 1.5,
+      "trailing_step": 0.5,
+      "max_hold_bars": 20
     },
     "DOGEUSDT": {
       "stop_atr": 3.0,
-      "tp1_r": 2.0,
-      "tp2_r": 0,
-      "exit_slow": 60,
-      "min_signal_strength": 50,
-      "regime_filter": "down"
+      "tp1_r": 5.0,
+      "tp2_r": 8.0,
+      "exit_slow": 70,
+      "min_signal_strength": 40,
+      "regime_filter": "down",
+      "trailing_start": 2.0,
+      "trailing_step": 0.5,
+      "max_hold_bars": 24
     }
   },
   "telegram": {
@@ -70,8 +86,8 @@
     "slippage": 0.0001
   },
   "risk": {
-    "vol_adjust": false,
-    "vol_lookback": 100,
+    "vol_adjust": true,
+    "vol_lookback": 20,
     "strength_sizing": true,
     "dd_throttle_pct": 0,
     "trail_atr_mult": 0,
@@ -80,8 +96,8 @@
   },
   "risk_overrides": {
     "BTCUSDT": {
-      "vol_adjust": false,
-      "vol_lookback": 100,
+      "vol_adjust": true,
+      "vol_lookback": 20,
       "strength_sizing": true,
       "dd_throttle_pct": 0,
       "trail_atr_mult": 0,
@@ -90,8 +106,8 @@
     },
     "ETHUSDT": {
       "vol_adjust": true,
-      "vol_lookback": 100,
-      "strength_sizing": false,
+      "vol_lookback": 20,
+      "strength_sizing": true,
       "dd_throttle_pct": 0,
       "trail_atr_mult": 0,
       "loss_streak_n": 0,
@@ -99,8 +115,8 @@
     },
     "DOGEUSDT": {
       "vol_adjust": false,
-      "vol_lookback": 100,
-      "strength_sizing": false,
+      "vol_lookback": 20,
+      "strength_sizing": true,
       "dd_throttle_pct": 0,
       "trail_atr_mult": 0,
       "loss_streak_n": 0,
