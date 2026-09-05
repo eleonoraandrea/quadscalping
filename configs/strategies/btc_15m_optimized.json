@@ -1,0 +1,28 @@
+{
+  "symbol": "BTCUSDT",
+  "timeframe": "15m",
+  "use_markov_filter": true,
+  "markov_config": {
+    "lookback_period": 200,
+    "confidence_threshold": 0.55,
+    "min_trade_probability": 0.45
+  },
+  "strategy": {
+    "atr_period": 10,
+    "stop_atr": 1.8,
+    "tp1_r": 2.0,
+    "partial_pct": 0.6,
+    "exit_slow": 65,
+    "min_signal_strength": 55,
+    "regime_filter": "any",
+    "min_volatility": 1.2
+  },
+  "risk": {
+    "risk_pct": 0.01,
+    "max_daily_loss_pct": 0.03,
+    "vol_adjust": true,
+    "strength_sizing": true,
+    "dd_throttle_pct": 0.08,
+    "trail_atr_mult": 1.2
+  }
+}

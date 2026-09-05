@@ -1,0 +1,42 @@
+Ottimizzazione Avanzata - 2026-09-04 23:45:06
+Periodo: 2025-03-04 - 2026-09-04
+
+
+=== BTCUSDT ===
+TrailingStopATR: 0.0
+DynamicTP: true
+TP1R: 5.0
+StopATR: 1.5
+RegimeFilter: down
+PnL: 858.59
+WinRate: 66.7
+MaxDD: 2.01
+Sharpe: 3.20
+Trades: 6
+ProfitFactor: 5.37
+
+=== ETHUSDT ===
+TrailingStopATR: 0.0
+DynamicTP: true
+TP1R: 5.0
+StopATR: 2.0
+RegimeFilter: any
+PnL: 369.28
+WinRate: 54.5
+MaxDD: 4.14
+Sharpe: 1.43
+Trades: 11
+ProfitFactor: 1.93
+
+=== DOGEUSDT ===
+TrailingStopATR: 0.0
+DynamicTP: false
+TP1R: 5.0
+StopATR: 3.0
+RegimeFilter: down
+PnL: 450.61
+WinRate: 71.4
+MaxDD: 2.49
+Sharpe: 2.59
+Trades: 7
+ProfitFactor: 3.39

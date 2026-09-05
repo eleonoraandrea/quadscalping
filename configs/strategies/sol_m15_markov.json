@@ -1,0 +1,27 @@
+{
+  "symbol": "SOLUSDT",
+  "timeframe": "15m",
+  "use_markov_filter": true,
+  "markov_config": {
+    "lookback_period": 100,
+    "confidence_threshold": 0.60,
+    "min_trade_probability": 0.50
+  },
+  "strategy": {
+    "atr_period": 9,
+    "stop_atr": 2.2,
+    "tp1_r": 1.8,
+    "partial_pct": 0.5,
+    "exit_slow": 80,
+    "min_signal_strength": 55,
+    "regime_filter": "any"
+  },
+  "risk": {
+    "risk_pct": 0.015,
+    "max_daily_loss_pct": 0.04,
+    "vol_adjust": true,
+    "strength_sizing": true,
+    "dd_throttle_pct": 0.08,
+    "trail_atr_mult": 1.3
+  }
+}

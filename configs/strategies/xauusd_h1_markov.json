@@ -1,0 +1,27 @@
+{
+  "symbol": "XAUUSD",
+  "timeframe": "1h",
+  "use_markov_filter": true,
+  "markov_config": {
+    "lookback_period": 100,
+    "confidence_threshold": 0.70,
+    "min_trade_probability": 0.60
+  },
+  "strategy": {
+    "atr_period": 14,
+    "stop_atr": 2.5,
+    "tp1_r": 3.0,
+    "partial_pct": 0.5,
+    "exit_slow": 70,
+    "min_signal_strength": 70,
+    "regime_filter": "any"
+  },
+  "risk": {
+    "risk_pct": 0.01,
+    "max_daily_loss_pct": 0.03,
+    "vol_adjust": true,
+    "strength_sizing": true,
+    "dd_throttle_pct": 0.06,
+    "trail_atr_mult": 2.0
+  }
+}
