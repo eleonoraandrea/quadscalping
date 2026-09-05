@@ -1,1 +1,22 @@
-*.html
+```
+# Executables
+bin/
+
+# Data files (if they are large/generated)
+data/*.csv
+
+# Reports (generated files)
+reports/
+
+# Go build artifacts
+*.exe
+*.dll
+*.so
+*.a
+*.o
+*.obj
+*.out
+
+# Dependencies (if any Go modules are used)
+vendor/
+```
